@@ -8,8 +8,8 @@ import Skill from "./components/skill/Skill";
 
 const App = () => {
   return <div>
+    <Navbar/>
     <section id="Homepage">
-      <Navbar/>
       <Hero/>
     </section>
     <section id="Protfolio">

@@ -1,4 +1,11 @@
+@import "../../../app.scss";
+
 .bt{
     margin-right: 0px;
     margin-top: 10px;
+    z-index: 1001;
+
+    @include mobile {
+        display: none;
+    }
 }

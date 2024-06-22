@@ -11,10 +11,11 @@
 
     @include mobile {
         width: auto;
-        height: 100%;
+        height: 100vh;
+        padding-top: 80px;
         align-items: center;
         justify-content: center;
-      }
+    }
 
     h1{
         font-size: 100px;
