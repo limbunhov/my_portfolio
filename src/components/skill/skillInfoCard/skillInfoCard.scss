@@ -1,0 +1,82 @@
+@import "../../../app.scss";
+
+.skillInfoCard {
+    height: 23rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background: rgba(22, 17, 47, 0.398);
+    backdrop-filter: blur(1rem);
+
+    @include mobile {
+        height: 15rem;
+        width: 16rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.8rem 2rem;
+        background: linear-gradient(180deg, #ac69ff 0%, #7c5fe6 100%);
+        background-color: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 1.5px solid #6751b9;
+
+        @include mobile {
+            font-size: 0.8;
+        }
+    }
+
+    .skillInfoContent {
+        padding: 2rem;
+
+        @include mobile {
+            padding: 0.5rem;
+        }
+    }
+
+    .skillInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+
+            @include mobile {
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+        }
+
+        .percentage {
+            color: #dd8cfa;
+        }
+    }
+
+    .skillProgressBg {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        width: 100%;
+        height: 0.5rem;
+        background: #382e68;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        @include mobile {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .skillProgress {
+        width: 0%;
+        height: 0.5rem;
+        background: linear-gradient(90deg, #aa94fe -50%, #7d60e6 50%);
+        border-radius: 0.5rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+}
