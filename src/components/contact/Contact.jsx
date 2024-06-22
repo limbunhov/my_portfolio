@@ -45,6 +45,16 @@ const Contact = () => {
 
     return (
         <motion.div className="contact" variants={variants} initial="initail" whileInView="animate">
+            <div className="formContainer">
+                <form onSubmit={sendEmail} ref={formRef}>
+                    <input type="text" name="name" required placeholder="Name" />
+                    <input type="email" name="email" required placeholder="Email" />
+                    <textarea rows="8" placeholder="Message" name="message" />
+                    <button type="submit">Submit</button>
+                    {error && <div className="error-message">Error</div>}
+                    {success && <div className="success-message">Message sent successfully!</div>}
+                </form>
+            </div>
             <motion.div className="textContainer" variants={variants}>
                 <motion.h1 variants={variants}>Let&rsquo;s Work Together</motion.h1>
                 <motion.div className="item" variants={variants}>
@@ -60,16 +70,6 @@ const Contact = () => {
                     <span>+855 963 354 150</span>
                 </motion.div>
             </motion.div>
-            <div className="formContainer">
-                <form onSubmit={sendEmail} ref={formRef}>
-                    <input type="text" name="name" required placeholder="Name" />
-                    <input type="email" name="email" required placeholder="Email" />
-                    <textarea rows="8" placeholder="Message" name="message" />
-                    <button type="submit">Submit</button>
-                    {error && <div className="error-message">Error</div>}
-                    {success && <div className="success-message">Message sent successfully!</div>}
-                </form>
-            </div>
         </motion.div>
     );
 }

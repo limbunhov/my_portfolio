@@ -11,7 +11,7 @@
 
     @include mobile {
         width: 100%;
-        gap: 10px;
+        gap: 1px;
         flex-direction: column;
     }
 
@@ -22,9 +22,9 @@
         gap: 30px;
         
         @include mobile {
-            margin-top: 20px;
+            margin-top: 0px;
             gap: 10px;
-            padding-top: 30px;
+            padding-top: 0px;
         }
 
         h1 {
@@ -32,6 +32,7 @@
             line-height: 88px;
 
             @include mobile {
+                line-height: 50px;
                 // line-height: 50px;
                 font-size: 30px;
             }
@@ -54,6 +55,7 @@
         flex: 1;
 
         @include mobile {
+            margin-top: 60px;
             width: 100%;
             padding: 15px;
         }
